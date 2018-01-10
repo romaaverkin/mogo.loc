@@ -1,0 +1,472 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+html, body
+  height: 100%
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.75
+  font-family: $default-font
+  overflow-x: hidden
+  opacity: 1
+  &.ishome
+    .site-header
+      min-height: 700px
+      height: 100vh
+      background-color: $red
+      .top-line
+        padding-top: 40px
+        position: absolute
+        width: 100%
+        z-index: 1
+
+.h1, .h2, .h3, .h4, .h5, .h6
+  line-height: 1.4
+  text-transform: uppercase
+
+.logo
+  font-family: "montserrat"
+  color: #fff
+  margin-left: 180px
+  font-size: 30px
+  &:hover
+    text-decoration: none
+    color: #fff
+
+.icons-footer
+  position: absolute
+  right: 150px
+  color: #fff
+  top: 55px
+  .fa
+    margin-right: 40px
+
+section, header
+  position: relative
+  background-size: cover
+  background-position: center
+
+section
+  background-color: #fff
+  &.inverse
+    color: #fff
+  .h2
+    font-family: "montserrat"
+    font-size: 30px
+
+.img-responsive
+  display: block
+  max-width: 100%
+  height: auto
+
+.hamburger
+  right: 0
+  position: absolute
+  .hamburger-box
+    width: 34px
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
+  border-radius: 0
+  width: 34px
+  height: 2px
+  background-color: #fff
+
+.mm-navbar
+  border: 0
+  a.mm-title
+  font-family: "montserrat"
+  font-weight: bold
+  font-size: 25px
+
+html.mm-opened
+  overflow-y: scroll
+
+.mm-panels > .mm-panel.mm-hasnavbar
+  right: -18px
+
+  position: relative
+  top: 0
+
+.mm-listview > li:not(.mm-divider):after
+//display: none
+
+.mm-menu .mm-listview > li.mm-selected > a:not(.mm-next), .mm-menu .mm-listview > li.mm-selected > span
+  background-color: transparent
+  color: $red
+
+ul.mm-listview li a
+  text-transform: uppercase
+  font-family: "montserrat"
+
+.mm-listview
+  > li
+    > a
+      transition: color .25s ease
+      padding:
+      //left: 14%
+      //right: 14%
+      &:hover
+        color: $red
+      &::before
+
+    &.active
+      & > a
+        color: $red
+
+.header-flex
+  display: flex
+  height: 100%
+  position: relative
+  top: 0
+
+.flex-center
+  margin: auto
+
+.header-composition
+  text-align: center
+  position: relative
+  .welcome
+    p
+      margin-top: -10px
+      margin-bottom: 16px
+      font-size: 72px
+      font-family: "kaushan"
+      color: #fff
+    .h1
+      line-height: 0.95
+      font-family: "montserrat"
+      color: #fff
+      font-size: 150px
+      margin-top: 0
+      margin-bottom: 38px
+  p span
+    &::before
+      content: ''
+      height: 3px
+      width: 60px
+      position: relative
+      background-color: #fff
+      display: inline-block
+  a
+    font-family: "montserrat"
+    color: #fff
+    text-transform: uppercase
+    font-size: 14px
+    border: 3px solid #fff
+    padding: 7px
+    &:hover
+      text-decoration: none
+      color: $red
+
+.button
+  display: inline-block
+  border: none
+  color: #fff
+  text-decoration: none
+  background-color: $accent
+  padding: 16px 45px
+  font-size: 13px
+  text-transform: uppercase
+  font-weight: 600
+  letter-spacing: 3px
+  border-radius: 2px
+  text-align: center
+  position: relative
+  outline: none
+  transition: background-color .1s ease
+  &::after
+    transition: background-color .2s ease
+    position: absolute
+    content: ''
+    height: 4px
+    bottom: 0
+    width: 100%
+    background-color: darken($accent, 50%)
+    opacity: .18
+    border-bottom-left-radius: 2px
+    border-bottom-right-radius: 2px
+    left: 0
+  &:focus, &:hover
+    text-decoration: none
+    color: #fff
+  &:hover
+    background-color: lighten($accent, 5%)
+    &::after
+      opacity: .22
+  &:active
+    background-color: darken($accent, 5%)
+    &::after
+      opacity: .32
+
+  &.button-white
+    background-color: #fff
+    color: #444
+    &::after
+      background-color: rgba(#000, .6)
+    &:hover
+      &::after
+        background-color: rgba(#000, .2)
+    &:active
+      &::after
+        background-color: rgba(#000, .4)
+
+  &.button-dark
+    background-color: #4d4d4d
+    color: #fff
+    &::after
+      background-color: $accent
+      opacity: 1
+    &:hover
+      background-color: lighten(#4d4d4d, 5)
+    &:active
+      &::after
+        background-color: rgba($accent, .2)
+      background-color: darken(#4d4d4d, 2)
+
+.button-wrap
+  text-align: center
+
+.header-social
+  position: absolute
+  display: flex
+  right: 0
+  height: 100%
+  border-left: rgba(#fff, .1) 1px solid
+  top: 0
+  padding: 0 20px
+  align-items: center
+
+.soc
+  //margin: auto
+  ul, li
+    margin: 0
+    padding: 0
+    list-style-type: none
+  a
+    color: $accent
+    display: block
+    margin: 18px 0
+    transition: background-color .25s ease
+    &:hover
+      color: $yellow
+
+.header-links
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 100%
+  .row li
+    font-size: 13px
+    font-family: "montserrat"
+    padding: 15px 0
+    list-style-type: none
+    text-transform: uppercase
+    div
+      border-top: 3px solid #f7eac5
+      padding-left: 0
+      padding-top: 15px
+    a
+      display: block
+      color: #fff
+      text-decoration: none
+      &:hover
+        color: $red
+        text-decoration: none
+    strong
+      font-size: 17px
+
+$colors: $yellow, $red, $accent
+@for $i from 1 through length($colors)
+  .carousel-services .owl-item:nth-child(#{length($colors)}n+#{$i})
+    background-color: nth($colors, $i)
+
+.carousel-services
+  &-item
+    position: relative
+    display: flex
+    flex-direction: column
+  &-image-top, &-image-bottom
+    opacity: .7
+    display: flex
+    &:hover
+      opacity: 1
+      transition: opacity .5s ease
+      position: relative
+
+  .owl-nav
+    position: absolute
+    top: 0
+    width: 100%
+    > div
+      width: 64px
+      height: 64px
+      background-color: #ffffff
+      color: #000
+      position: absolute
+      text-align: center
+      line-height: 64px
+      font-size: 26px
+      &.owl-prev
+        left: 0
+      &.owl-next
+        right: 0
+
+.owl-carousel
+  .owl-item
+    backface-visibility: inherit
+
+.s
+  &-nature, &-review, &-partners
+    padding: 5% 0
+  &-nature
+    p
+      margin: 30px 0
+  &-call
+    //background-size: contain
+    //background-repeat: no-repeat
+    //background-position: 30%
+    &::before
+      content: ''
+      width: 50%
+      left: 0
+      height: 100%
+      position: absolute
+      background-color: rgba($accent, .2)
+
+.section-overlay
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: $accent
+    opacity: .4
+
+.fotorama
+  background-color: rgba($accent, .4)
+  &__nav
+    &-wrap
+      position: absolute
+      bottom: 15px
+      padding: 0 30px
+      width: 100%
+  &__thumb
+    border: 3px solid rgba(#fff, .5)
+    transition: background-color .5s ease
+    &-border
+      border-color: $yellow
+
+  &__nav:after, &_stage:after,
+  &__nav:before, &_stage:before
+    display: none
+
+  &__arr-
+    &-next, &-prev
+      &::before
+        font-family: FontAwesome
+        font-size: 32px
+        padding-left: 10px
+    &-next
+      &::before
+        content: '\f105'
+    &-prev
+      &::before
+        content: '\f104'
+
+input, textarea, select
+  background-color: transparent
+  border: $accent 1px solid
+  border-bottom: $accent 2px solid
+  -webkit-border-radius: 2px
+  -moz-border-radius: 2px
+  border-radius: 2px
+  padding: 8px 22px
+  outline: none
+  display: inline-block
+  font-size: 16px
+  color: #333
+select
+  padding: 10px 18px
+
+.success
+  display: none
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  text-transform: uppercase
+  font-weight: bold
+  z-index: 10
+  span
+    margin: auto
+  & ~ *
+    transition: all .5s ease
+  &.active
+    & ~ *
+      opacity: .5
+      filter: blur(10px)
+
+.callback
+  padding: 35% 0
+  position: relative
+  &-logo
+    font-family: "montserrat"
+    color: #fff
+    font-size: 30px
+  .formhead
+    margin: 0
+    font-size: 25px
+    font-family: roboto
+  p
+    margin: 10px 0
+  input, textarea, select
+    color: #fff
+    width: 100%
+    margin-top: 17px
+    &::-webkit-input-placeholder
+      color: #fff
+      opacity: 1
+    &::-moz-placeholder
+      color: #fff
+      opacity: 1
+    &:-ms-input-placeholder
+      color: #fff
+    option
+      color: #333
+  .button
+    margin-top: 40px
+
+@import "media"
+// Всегда в конце
