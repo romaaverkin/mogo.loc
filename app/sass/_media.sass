@@ -29,8 +29,10 @@
       li
         padding: 5px 0
 
-  //.fotorama
-  //  background-color: inherit
+  .s
+    &-call
+      &::before
+        background-color: transparent
 
 
 /* Small Devices, Tablets */
@@ -54,6 +56,13 @@
 
   .icons-footer
     right: 35px
+
+  .s
+    &-call
+      &::before
+        width: 100%
+        background-color: rgba($red, .4)
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)

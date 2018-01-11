@@ -8417,7 +8417,9 @@ ul.mm-listview li a {
   .fotorama__arr--prev::before {
     content: '\f104'; }
 
-input, textarea, select {
+input, textarea, select,
+.selectize-control .selectize-input,
+.selectize-control.single .selectize-input.input-active {
   background-color: transparent;
   border: #95e1d3 1px solid;
   border-bottom: #95e1d3 2px solid;
@@ -8431,6 +8433,39 @@ input, textarea, select {
 
 select {
   padding: 10px 18px; }
+
+.selectize-control .selectize-input {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  overflow: inherit;
+  line-height: inherit;
+  text-align: left; }
+  .selectize-control .selectize-input input {
+    font-size: 16px; }
+  .selectize-control .selectize-input.dropdown-active::before {
+    background-color: transparent; }
+
+.selectize-control.single .selectize-input::after, .selectize-control.single.dropdown-active::after {
+  border: none;
+  content: '\f107';
+  font-family: FontAwesome;
+  position: absolute;
+  right: 30px;
+  top: 12px; }
+
+.selectize-control.single .selectize-input.dropdown-active::after, .selectize-control.single.dropdown-active.dropdown-active::after {
+  content: '\f106'; }
+
+.selectize-control.single .selectize-dropdown {
+  font-size: 16px;
+  border: none;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  text-align: left; }
+  .selectize-control.single .selectize-dropdown-content .option {
+    padding: 10px 22px; }
+    .selectize-control.single .selectize-dropdown-content .option.active {
+      background-color: #d1f2ec; }
 
 .success {
   display: none;
@@ -8454,11 +8489,10 @@ select {
             filter: blur(10px); }
 
 .callback {
-  padding: 35% 0;
+  padding: 25% 0;
   position: relative; }
   .callback-logo {
     font-family: "montserrat";
-    color: #fff;
     font-size: 30px; }
   .callback .formhead {
     margin: 0;
@@ -8466,19 +8500,29 @@ select {
     font-family: roboto; }
   .callback p {
     margin: 10px 0; }
-  .callback input, .callback textarea, .callback select {
+  .callback input, .callback textarea, .callback select,
+  .callback .selectize-control .selectize-input,
+  .callback .selectize-control.single .selectize-input.input-active {
     color: #fff;
     width: 100%;
     margin-top: 17px; }
-    .callback input::-webkit-input-placeholder, .callback textarea::-webkit-input-placeholder, .callback select::-webkit-input-placeholder {
+    .callback input::-webkit-input-placeholder, .callback textarea::-webkit-input-placeholder, .callback select::-webkit-input-placeholder,
+    .callback .selectize-control .selectize-input::-webkit-input-placeholder,
+    .callback .selectize-control.single .selectize-input.input-active::-webkit-input-placeholder {
       color: #fff;
       opacity: 1; }
-    .callback input::-moz-placeholder, .callback textarea::-moz-placeholder, .callback select::-moz-placeholder {
+    .callback input::-moz-placeholder, .callback textarea::-moz-placeholder, .callback select::-moz-placeholder,
+    .callback .selectize-control .selectize-input::-moz-placeholder,
+    .callback .selectize-control.single .selectize-input.input-active::-moz-placeholder {
       color: #fff;
       opacity: 1; }
-    .callback input:-ms-input-placeholder, .callback textarea:-ms-input-placeholder, .callback select:-ms-input-placeholder {
+    .callback input:-ms-input-placeholder, .callback textarea:-ms-input-placeholder, .callback select:-ms-input-placeholder,
+    .callback .selectize-control .selectize-input:-ms-input-placeholder,
+    .callback .selectize-control.single .selectize-input.input-active:-ms-input-placeholder {
       color: #fff; }
-    .callback input option, .callback textarea option, .callback select option {
+    .callback input option, .callback textarea option, .callback select option,
+    .callback .selectize-control .selectize-input option,
+    .callback .selectize-control.single .selectize-input.input-active option {
       color: #333; }
   .callback .button {
     margin-top: 40px; }
@@ -8500,7 +8544,9 @@ select {
   .header-composition .welcome .h1 {
     font-size: 96px; }
   .header-links .row li {
-    padding: 5px 0; } }
+    padding: 5px 0; }
+  .s-call::before {
+    background-color: transparent; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -8515,7 +8561,10 @@ select {
   .logo {
     margin-left: 72px; }
   .icons-footer {
-    right: 35px; } }
+    right: 35px; }
+  .s-call::before {
+    width: 100%;
+    background-color: rgba(243, 129, 129, 0.4); } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {

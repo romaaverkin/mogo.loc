@@ -41,7 +41,7 @@ $(function () {
         }
     });
 
-    // $('select').selectize();
+    $('select').selectize();
 
     //E-mail Ajax Send
     $("form.callback").submit(function () { //Change

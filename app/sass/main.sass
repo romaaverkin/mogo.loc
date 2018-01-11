@@ -404,7 +404,9 @@ $colors: $yellow, $red, $accent
       &::before
         content: '\f104'
 
-input, textarea, select
+input, textarea, select,
+.selectize-control .selectize-input,
+.selectize-control.single .selectize-input.input-active
   background-color: transparent
   border: $accent 1px solid
   border-bottom: $accent 2px solid
@@ -416,8 +418,42 @@ input, textarea, select
   display: inline-block
   font-size: 16px
   color: #333
+
 select
   padding: 10px 18px
+
+.selectize-control .selectize-input
+  box-shadow: none
+  overflow: inherit
+  line-height: inherit
+  text-align: left
+  input
+    font-size: 16px
+  &.dropdown-active::before
+    background-color: transparent
+
+.selectize-control.single
+  .selectize-input, &.dropdown-active
+    &::after
+      border: none
+      content: '\f107'
+      font-family: FontAwesome
+      position: absolute
+      right: 30px
+      top: 12px
+    &.dropdown-active::after
+      content: '\f106'
+
+  .selectize-dropdown
+    font-size: 16px
+    border: none
+    border-radius: 0
+    text-align: left
+    &-content
+      .option
+        padding: 10px 22px
+        &.active
+          background-color: lighten($accent, 15)
 
 .success
   display: none
@@ -439,11 +475,12 @@ select
       filter: blur(10px)
 
 .callback
-  padding: 35% 0
+  padding: 25% 0
   position: relative
+  //color: $yellow
   &-logo
     font-family: "montserrat"
-    color: #fff
+    //color: #fff
     font-size: 30px
   .formhead
     margin: 0
@@ -451,7 +488,9 @@ select
     font-family: roboto
   p
     margin: 10px 0
-  input, textarea, select
+  input, textarea, select,
+  .selectize-control .selectize-input,
+  .selectize-control.single .selectize-input.input-active
     color: #fff
     width: 100%
     margin-top: 17px
