@@ -8058,6 +8058,9 @@ body {
   line-height: 1.4;
   text-transform: uppercase; }
 
+.text-center {
+  text-align: center; }
+
 .logo {
   font-family: "montserrat";
   color: #fff;
@@ -8489,7 +8492,7 @@ select {
             filter: blur(10px); }
 
 .callback {
-  padding: 25% 0;
+  padding: 50% 0;
   position: relative; }
   .callback-logo {
     font-family: "montserrat";

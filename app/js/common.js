@@ -43,6 +43,10 @@ $(function () {
 
     $('select').selectize();
 
+    $('.reviews').owlCarousel({
+        loop: true, //
+    });
+
     //E-mail Ajax Send
     $("form.callback").submit(function () { //Change
         var th = $(this);
