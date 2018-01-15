@@ -510,5 +510,53 @@ select
   .button
     margin-top: 40px
 
+.s-review
+  background-color: #f8f8f8
+  &.section-overlay
+    &::before
+      background-color: #f8f8f8
+
+.reviews
+  .speech
+    .fa
+      font-size: 100px
+      color: $accent
+      border: 3px solid $accent
+      padding: 15px
+  .review-text
+    padding: 0 0 0 45px
+    font-size: 20px
+    color: #999999
+    line-height: 1.7
+    .review-footer
+      font-family: kaushan
+      color: #333333
+      &::before
+        content: ''
+        height: 3px
+        width: 60px
+        position: relative
+        margin: 0 10px 4px 0
+        background-color: $red
+        display: inline-block
+
+  .owl-nav
+    position: absolute
+    top: 40%
+    width: 100%
+    color: #cccccc
+    > div
+      position: absolute
+      font-size: 26px
+      &.owl-prev
+        left: 45px
+        width: 50px
+        height: 50px
+      &.owl-next
+        text-align: right
+        right: 45px
+        width: 50px
+        height: 50px
+
 @import "media"
 // Всегда в конце

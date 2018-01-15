@@ -44,7 +44,12 @@ $(function () {
     $('select').selectize();
 
     $('.reviews').owlCarousel({
-        loop: true, //
+        loop: true, // зациклить карусель
+        items: 1,
+        smartSpeed: 700,
+        nav: true,
+        dots: false,
+        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
     });
 
     //E-mail Ajax Send

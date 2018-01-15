@@ -8530,6 +8530,52 @@ select {
   .callback .button {
     margin-top: 40px; }
 
+.s-review {
+  background-color: #f8f8f8; }
+  .s-review.section-overlay::before {
+    background-color: #f8f8f8; }
+
+.reviews .speech .fa {
+  font-size: 100px;
+  color: #95e1d3;
+  border: 3px solid #95e1d3;
+  padding: 15px; }
+
+.reviews .review-text {
+  padding: 0 0 0 45px;
+  font-size: 20px;
+  color: #999999;
+  line-height: 1.7; }
+  .reviews .review-text .review-footer {
+    font-family: kaushan;
+    color: #333333; }
+    .reviews .review-text .review-footer::before {
+      content: '';
+      height: 3px;
+      width: 60px;
+      position: relative;
+      margin: 0 10px 4px 0;
+      background-color: #f38181;
+      display: inline-block; }
+
+.reviews .owl-nav {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  color: #cccccc; }
+  .reviews .owl-nav > div {
+    position: absolute;
+    font-size: 26px; }
+    .reviews .owl-nav > div.owl-prev {
+      left: 45px;
+      width: 50px;
+      height: 50px; }
+    .reviews .owl-nav > div.owl-next {
+      text-align: right;
+      right: 45px;
+      width: 50px;
+      height: 50px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
