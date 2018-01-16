@@ -8033,9 +8033,6 @@ em.mm-counter + a.mm-next + label.mm-check + a, em.mm-counter + a.mm-next + labe
   color: #666;
   opacity: 1; }
 
-html, body {
-  height: 100%; }
-
 body {
   font-size: 16px;
   min-width: 320px;
@@ -8062,7 +8059,7 @@ body {
   text-align: center; }
 
 .logo {
-  font-family: "montserrat";
+  font-family: montserrat, sans-serif;
   color: #fff;
   margin-left: 180px;
   font-size: 30px; }
@@ -8089,8 +8086,13 @@ section {
   section.inverse {
     color: #fff; }
   section .h2 {
-    font-family: "montserrat";
+    font-family: montserrat, sans-serif;
     font-size: 30px; }
+  section .h3 {
+    font-family: kaushan, cursive;
+    font-size: 24px;
+    text-transform: none;
+    font-weight: normal; }
 
 .img-responsive {
   display: block;
@@ -8112,7 +8114,7 @@ section {
 
 .mm-navbar {
   border: 0;
-  font-family: "montserrat";
+  font-family: montserrat, sans-serif;
   font-weight: bold;
   font-size: 25px; }
 
@@ -8130,7 +8132,7 @@ html.mm-opened {
 
 ul.mm-listview li a {
   text-transform: uppercase;
-  font-family: "montserrat"; }
+  font-family: montserrat, sans-serif; }
 
 .mm-listview > li > a {
   -webkit-transition: color .25s ease;
@@ -8161,11 +8163,11 @@ ul.mm-listview li a {
     margin-top: -10px;
     margin-bottom: 16px;
     font-size: 72px;
-    font-family: "kaushan";
+    font-family: kaushan, cursive;
     color: #fff; }
   .header-composition .welcome .h1 {
     line-height: 0.95;
-    font-family: "montserrat";
+    font-family: montserrat, sans-serif;
     color: #fff;
     font-size: 150px;
     margin-top: 0;
@@ -8178,7 +8180,7 @@ ul.mm-listview li a {
     background-color: #fff;
     display: inline-block; }
   .header-composition a {
-    font-family: "montserrat";
+    font-family: montserrat, sans-serif;
     color: #fff;
     text-transform: uppercase;
     font-size: 14px;
@@ -8297,7 +8299,7 @@ ul.mm-listview li a {
   width: 100%; }
   .header-links .row li {
     font-size: 13px;
-    font-family: "montserrat";
+    font-family: montserrat, sans-serif;
     padding: 15px 0;
     list-style-type: none;
     text-transform: uppercase; }
@@ -8465,9 +8467,9 @@ select {
   -webkit-border-radius: 0;
           border-radius: 0;
   text-align: left; }
-  .selectize-control.single .selectize-dropdown-content .option {
+  .selectize-control.single .selectize-dropdown-content {
     padding: 10px 22px; }
-    .selectize-control.single .selectize-dropdown-content .option.active {
+    .selectize-control.single .selectize-dropdown-content.active {
       background-color: #d1f2ec; }
 
 .success {
@@ -8495,12 +8497,12 @@ select {
   padding: 50% 0;
   position: relative; }
   .callback-logo {
-    font-family: "montserrat";
+    font-family: montserrat, sans-serif;
     font-size: 30px; }
   .callback .formhead {
     margin: 0;
     font-size: 25px;
-    font-family: roboto; }
+    font-family: "roboto", sans-serif; }
   .callback p {
     margin: 10px 0; }
   .callback input, .callback textarea, .callback select,
@@ -8535,19 +8537,21 @@ select {
   .s-review.section-overlay::before {
     background-color: #f8f8f8; }
 
-.reviews .speech .fa {
-  font-size: 100px;
-  color: #95e1d3;
-  border: 3px solid #95e1d3;
-  padding: 15px; }
+.reviews .speech {
+  float: left;
+  margin: 0 20px 0 0; }
+  .reviews .speech .fa {
+    font-size: 100px;
+    color: #95e1d3;
+    border: 3px solid #95e1d3;
+    padding: 15px; }
 
 .reviews .review-text {
-  padding: 0 0 0 45px;
   font-size: 20px;
   color: #999999;
   line-height: 1.7; }
   .reviews .review-text .review-footer {
-    font-family: kaushan;
+    font-family: kaushan, cursive;
     color: #333333; }
     .reviews .review-text .review-footer::before {
       content: '';
@@ -8575,6 +8579,27 @@ select {
       right: 45px;
       width: 50px;
       height: 50px; }
+
+.s-info .h3 {
+  margin: 94px 0 0 0; }
+
+.s-info .h2 {
+  margin: 10px 0 0 0; }
+
+.s-info .red-line::before {
+  content: attr(href);
+  height: 3px;
+  width: 60px;
+  position: relative;
+  margin-top: 30px;
+  background-color: #f38181;
+  display: inline-block; }
+
+.s-info .info-text {
+  margin: 30px 0 95px;
+  color: #999999;
+  font-size: 15px;
+  padding-left: 0; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

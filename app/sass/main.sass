@@ -57,7 +57,7 @@ body
   text-align: center
 
 .logo
-  font-family: "montserrat"
+  font-family: montserrat, sans-serif
   color: #fff
   margin-left: 180px
   font-size: 30px
@@ -83,8 +83,13 @@ section
   &.inverse
     color: #fff
   .h2
-    font-family: "montserrat"
+    font-family: montserrat, sans-serif
     font-size: 30px
+  .h3
+    font-family: kaushan, cursive
+    font-size: 24px
+    text-transform: none
+    font-weight: normal
 
 .img-responsive
   display: block
@@ -106,7 +111,7 @@ section
 .mm-navbar
   border: 0
   a.mm-title
-  font-family: "montserrat"
+  font-family: montserrat, sans-serif
   font-weight: bold
   font-size: 25px
 
@@ -128,7 +133,7 @@ html.mm-opened
 
 ul.mm-listview li a
   text-transform: uppercase
-  font-family: "montserrat"
+  font-family: montserrat, sans-serif
 
 .mm-listview
   > li
@@ -162,11 +167,11 @@ ul.mm-listview li a
       margin-top: -10px
       margin-bottom: 16px
       font-size: 72px
-      font-family: "kaushan"
+      font-family: kaushan, cursive
       color: #fff
     .h1
       line-height: 0.95
-      font-family: "montserrat"
+      font-family: montserrat, sans-serif
       color: #fff
       font-size: 150px
       margin-top: 0
@@ -180,7 +185,7 @@ ul.mm-listview li a
       background-color: #fff
       display: inline-block
   a
-    font-family: "montserrat"
+    font-family: montserrat, sans-serif
     color: #fff
     text-transform: uppercase
     font-size: 14px
@@ -289,7 +294,7 @@ ul.mm-listview li a
   width: 100%
   .row li
     font-size: 13px
-    font-family: "montserrat"
+    font-family: montserrat, sans-serif
     padding: 15px 0
     list-style-type: none
     text-transform: uppercase
@@ -454,9 +459,9 @@ select
     text-align: left
     &-content
       .option
-        padding: 10px 22px
-        &.active
-          background-color: lighten($accent, 15)
+      padding: 10px 22px
+      &.active
+        background-color: lighten($accent, 15)
 
 .success
   display: none
@@ -482,13 +487,13 @@ select
   position: relative
   //color: $yellow
   &-logo
-    font-family: "montserrat"
+    font-family: montserrat, sans-serif
     //color: #fff
     font-size: 30px
   .formhead
     margin: 0
     font-size: 25px
-    font-family: roboto
+    font-family: $default-font
   p
     margin: 10px 0
   input, textarea, select,
@@ -518,18 +523,20 @@ select
 
 .reviews
   .speech
+    float: left
+    margin: 0 20px 0 0
     .fa
       font-size: 100px
       color: $accent
       border: 3px solid $accent
       padding: 15px
   .review-text
-    padding: 0 0 0 45px
+    //padding: 0 0 0 150px
     font-size: 20px
-    color: #999999
+    color: $gray
     line-height: 1.7
     .review-footer
-      font-family: kaushan
+      font-family: kaushan, cursive
       color: #333333
       &::before
         content: ''
@@ -557,6 +564,26 @@ select
         right: 45px
         width: 50px
         height: 50px
+
+.s-info
+  .h3
+    margin: 94px 0 0 0
+  .h2
+    margin: 10px 0 0 0
+  .red-line
+    &::before
+      content: attr(href)
+      height: 3px
+      width: 60px
+      position: relative
+      margin-top: 30px
+      background-color: $red
+      display: inline-block
+  .info-text
+    margin: 30px 0 95px
+    color: $gray
+    font-size: 15px
+    padding-left: 0
 
 @import "media"
 // Всегда в конце
