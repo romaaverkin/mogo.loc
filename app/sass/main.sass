@@ -369,6 +369,35 @@ $colors: $yellow, $red, $accent
       height: 100%
       position: absolute
       background-color: rgba($accent, .2)
+  &-review
+    background-color: #f8f8f8
+    &.section-overlay
+      &::before
+        background-color: #f8f8f8
+  &-info
+    .h3
+      margin: 94px 0 0 0
+    .h2
+      margin: 10px 0 0 0
+    .red-line
+      &::before
+        content: attr(href)
+        height: 3px
+        width: 60px
+        position: relative
+        margin-top: 30px
+        background-color: $red
+        display: inline-block
+    .info-text
+      margin: 30px 0 95px
+      color: $gray
+      font-size: 15px
+      padding-left: 0
+  &-partners.section-overlay
+    padding-top: 60px
+    &::before
+      background-color: #f8f8f8
+      opacity: 1
 
 .section-overlay
   &::before
@@ -515,12 +544,6 @@ select
   .button
     margin-top: 40px
 
-.s-review
-  background-color: #f8f8f8
-  &.section-overlay
-    &::before
-      background-color: #f8f8f8
-
 .reviews
   .speech
     float: left
@@ -555,35 +578,46 @@ select
     > div
       position: absolute
       font-size: 26px
+      transition: opacity .5s ease
+      padding: 0 10px
+      &:hover
+        opacity: .6
       &.owl-prev
         left: 45px
-        width: 50px
-        height: 50px
       &.owl-next
-        text-align: right
         right: 45px
-        width: 50px
-        height: 50px
 
-.s-info
-  .h3
-    margin: 94px 0 0 0
-  .h2
-    margin: 10px 0 0 0
-  .red-line
-    &::before
-      content: attr(href)
-      height: 3px
-      width: 60px
-      position: relative
-      margin-top: 30px
-      background-color: $red
+.partners
+  .partner
+    height: 100%
+    display: flex
+    margin: auto
+  .owl-stage
+    display: flex
+  .owl-item
+    img
+      max-width: 100%
+      width: auto
       display: inline-block
-  .info-text
-    margin: 30px 0 95px
-    color: $gray
-    font-size: 15px
-    padding-left: 0
+      margin: auto
+  .owl-nav
+    position: absolute
+    top: 0
+    width: 100%
+    z-index: 2
+    > div
+      position: absolute
+      top: 42px
+      color: #cccccc
+      font-size: 30px
+      transition: opacity .5s ease
+      padding: 0 10px
+      &:hover
+        opacity: .6
+      &.owl-prev
+        left: 0
+      &.owl-next
+        right: 0
 
 @import "media"
 // Всегда в конце
