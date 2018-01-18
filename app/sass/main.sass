@@ -619,5 +619,90 @@ select
       &.owl-next
         right: 0
 
+.main-footer
+  background-color: #fff
+  //background-color: #f8f8f8
+  padding: 2% 0
+  color: $gray
+  font-size: 15px
+
+.footer-column
+  margin: 15px 0
+  p
+    position: relative
+    font-size: 14px
+    color: #333333
+    strong
+      font-family: montserrat, sans-serif
+    span
+      font-size: 18px
+  hr
+    margin-top: -5px
+    margin-bottom: 10px
+    color: #e5e5e5
+
+.footer-logo
+  font-family: montserrat, sans-serif
+  font-size: 46px
+  color: #cccccc
+  + p
+    //font-family: $default-font
+    color: $gray
+    padding: 0
+    margin:
+      top: 15px
+      bottom: 40px
+    font-size: 15px
+
+.social-footer
+  margin-bottom: 30px
+  p
+    font-size: 15px
+    margin: 0 25px 0 0
+    padding-top: 2px
+    float: left
+    font-style: italic
+    color: $gray
+    //width: 100%
+    //overflow: hidden
+  .soc
+    li
+      padding-right: 15px
+      display: inline-block
+      font-size: 18px
+      a
+        margin: 0
+
+.box_your_email
+  display: flex
+  input
+    border: 1px solid #e7e7e7
+    border-radius: 0
+    width: 230px
+    padding: 5px 14px
+    color: #333333
+    &::-webkit-input-placeholder
+      color: #cccccc
+      font-style: italic
+      font-size: 15px
+    &::-moz-placeholder
+      color: #cccccc
+      font-style: italic
+      font-size: 15px
+    &:-ms-input-placeholder
+      color: #cccccc
+      font-style: italic
+      font-size: 15px
+  button
+    margin-left: -4px
+    border-radius: 0
+    font-size: 14px
+    font-family: montserrat, sans-serif
+    font-weight: bold
+    letter-spacing: normal
+    padding: 8px 33px
+    &::after
+      background-color: inherit
+
 @import "media"
 // Всегда в конце

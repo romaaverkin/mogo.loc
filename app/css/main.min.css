@@ -8652,6 +8652,90 @@ select {
     .partners .owl-nav > div.owl-next {
       right: 0; }
 
+.main-footer {
+  background-color: #fff;
+  padding: 2% 0;
+  color: #999999;
+  font-size: 15px; }
+
+.footer-column {
+  margin: 15px 0; }
+  .footer-column p {
+    position: relative;
+    font-size: 14px;
+    color: #333333; }
+    .footer-column p strong {
+      font-family: montserrat, sans-serif; }
+    .footer-column p span {
+      font-size: 18px; }
+  .footer-column hr {
+    margin-top: -5px;
+    margin-bottom: 10px;
+    color: #e5e5e5; }
+
+.footer-logo {
+  font-family: montserrat, sans-serif;
+  font-size: 46px;
+  color: #cccccc; }
+  .footer-logo + p {
+    color: #999999;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    font-size: 15px; }
+
+.social-footer {
+  margin-bottom: 30px; }
+  .social-footer p {
+    font-size: 15px;
+    margin: 0 25px 0 0;
+    padding-top: 2px;
+    float: left;
+    font-style: italic;
+    color: #999999; }
+  .social-footer .soc li {
+    padding-right: 15px;
+    display: inline-block;
+    font-size: 18px; }
+    .social-footer .soc li a {
+      margin: 0; }
+
+.box_your_email {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .box_your_email input {
+    border: 1px solid #e7e7e7;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    width: 230px;
+    padding: 5px 14px;
+    color: #333333; }
+    .box_your_email input::-webkit-input-placeholder {
+      color: #cccccc;
+      font-style: italic;
+      font-size: 15px; }
+    .box_your_email input::-moz-placeholder {
+      color: #cccccc;
+      font-style: italic;
+      font-size: 15px; }
+    .box_your_email input:-ms-input-placeholder {
+      color: #cccccc;
+      font-style: italic;
+      font-size: 15px; }
+  .box_your_email button {
+    margin-left: -4px;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    font-size: 14px;
+    font-family: montserrat, sans-serif;
+    font-weight: bold;
+    letter-spacing: normal;
+    padding: 8px 33px; }
+    .box_your_email button::after {
+      background-color: inherit; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
