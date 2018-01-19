@@ -8289,9 +8289,9 @@ ul.mm-listview li a {
   color: #95e1d3;
   display: block;
   margin: 18px 0;
-  -webkit-transition: background-color .25s ease;
-  -o-transition: background-color .25s ease;
-  transition: background-color .25s ease; }
+  -webkit-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease; }
   .soc a:hover {
     color: #fce38a; }
 
@@ -8657,9 +8657,16 @@ select {
   padding: 2% 0;
   color: #999999;
   font-size: 15px; }
+  .main-footer .container > hr {
+    margin-top: 54px; }
 
 .footer-column {
   margin: 15px 0; }
+  .footer-column h3 {
+    font-family: montserrat, sans-serif;
+    font-size: 14px;
+    color: #333333;
+    margin: 40px 0 34px 0; }
   .footer-column p {
     position: relative;
     font-size: 14px;
@@ -8672,6 +8679,13 @@ select {
     margin-top: -5px;
     margin-bottom: 10px;
     color: #e5e5e5; }
+  .footer-column a.more-photos {
+    font-style: italic;
+    font-size: 13px;
+    color: #333333; }
+    .footer-column a.more-photos:hover {
+      text-decoration: none;
+      color: #95e1d3; }
 
 .footer-logo {
   font-family: montserrat, sans-serif;
@@ -8725,7 +8739,6 @@ select {
       font-style: italic;
       font-size: 15px; }
   .box_your_email button {
-    margin-left: -4px;
     -webkit-border-radius: 0;
             border-radius: 0;
     font-size: 14px;
@@ -8735,6 +8748,47 @@ select {
     padding: 8px 33px; }
     .box_your_email button::after {
       background-color: inherit; }
+
+.blogs .blog {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px; }
+  .blogs .blog img {
+    margin-right: 20px; }
+  .blogs .blog p {
+    margin: 6px 0;
+    text-transform: uppercase;
+    font-family: montserrat, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.6; }
+    .blogs .blog p.date {
+      font-style: italic;
+      font-family: "roboto", sans-serif;
+      font-weight: 300;
+      color: #999999;
+      text-transform: none; }
+
+.instagram-photos .block-photos {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2px; }
+  .instagram-photos .block-photos img {
+    margin-right: 2px; }
+
+.my-copyright {
+  text-align: center; }
+  .my-copyright p {
+    font-family: montserrat, sans-serif;
+    font-size: 14px;
+    color: #333333;
+    margin: 26px 0 0; }
+    .my-copyright p span {
+      color: #f38181; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -8794,7 +8848,17 @@ select {
   .icons-footer {
     right: 35px; }
     .icons-footer .fa.fa-shopping-cart {
-      margin-right: 20px; } }
+      margin-right: 20px; }
+  .box_your_email {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {

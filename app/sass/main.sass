@@ -283,7 +283,7 @@ ul.mm-listview li a
     color: $accent
     display: block
     margin: 18px 0
-    transition: background-color .25s ease
+    transition: color .5s ease
     &:hover
       color: $yellow
 
@@ -625,9 +625,17 @@ select
   padding: 2% 0
   color: $gray
   font-size: 15px
+  .container
+    > hr
+      margin-top: 54px
 
 .footer-column
   margin: 15px 0
+  h3
+    font-family: montserrat, sans-serif
+    font-size: 14px
+    color: #333333
+    margin: 40px 0 34px 0
   p
     position: relative
     font-size: 14px
@@ -640,6 +648,13 @@ select
     margin-top: -5px
     margin-bottom: 10px
     color: #e5e5e5
+  a.more-photos
+    font-style: italic
+    font-size: 13px
+    color: #333333
+    &:hover
+      text-decoration: none
+      color: $accent
 
 .footer-logo
   font-family: montserrat, sans-serif
@@ -694,7 +709,6 @@ select
       font-style: italic
       font-size: 15px
   button
-    margin-left: -4px
     border-radius: 0
     font-size: 14px
     font-family: montserrat, sans-serif
@@ -703,6 +717,43 @@ select
     padding: 8px 33px
     &::after
       background-color: inherit
+
+.blogs
+  .blog
+    display: flex
+    margin-bottom: 30px
+    img
+      margin-right: 20px
+    p
+      margin: 6px 0
+      text-transform: uppercase
+      font-family: montserrat, sans-serif
+      font-size: 12px
+      font-weight: bold
+      line-height: 1.6
+      &.date
+        font-style: italic
+        font-family: $default-font
+        font-weight: 300
+        color: $gray
+        text-transform: none
+
+.instagram-photos
+  .block-photos
+    display: flex
+    margin-bottom: 2px
+    img
+      margin-right: 2px
+
+.my-copyright
+  text-align: center
+  p
+    font-family: montserrat, sans-serif
+    font-size: 14px
+    color: #333333
+    margin: 26px 0 0
+    span
+      color: $red
 
 @import "media"
 // Всегда в конце
